@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FAQs and Queries</h1>
+    </header>
+    
+    <div class="container">
+        <!-- FAQs Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <details>
+                    <summary>What payment methods do you accept?</summary>
+                    <p>We accept credit cards, PayPal, and digital wallets.</p>
+                </details>
+                <details>
+                    <summary>How long does shipping take?</summary>
+                    <p>Shipping typically takes 3-5 business days.</p>
+                </details>
+                <details>
+                    <summary>Can I get a refund for a digital game?</summary>
+                    <p>Refunds are available for unused digital codes within 14 days of purchase.</p>
+                </details>
+            </div>
+        </section>
+    
+        <!-- Form Section -->
+        <section class="form-section">
+            <h2>Ask a Question</h2>
+            <form action="/submit_query" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="question" placeholder="Your Question" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
